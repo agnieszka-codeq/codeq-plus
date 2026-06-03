@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Codeq Plus – abonament na utrzymanie strony WordPress, WooCommerce i Shopify. Aktualizacje, bezpieczeństwo, monitoring i analityka od 399 PLN/mies." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Codeq Plus – Utrzymanie Strony w Abonamencie" />
+  <meta property="og:description" content="Codeq Plus to niski abonament na techniczną opiekę nad stroną. Aktualizacje, monitoring, backupy i analityka. Bez długoterminowych zobowiązań." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+  <title>Codeq Plus – Utrzymanie Strony w Abonamencie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ====================================================
+     NAVIGATION
+     ==================================================== -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+
+    <!-- Logo -->
+    <a href="#" class="nav__logo" aria-label="Codeq Plus – strona główna">
+      <div class="nav__logo-mark">
+        <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 2L2 5.5V12.5L9 16L16 12.5V5.5L9 2Z" fill="white" fill-opacity="0.2" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M9 6V12M6 9H12" stroke="white" stroke-width="1.75" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="nav__logo-wordmark">Codeq <em>Plus</em></span>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="nav__links">
+      <li><a href="#problem">Problem</a></li>
+      <li><a href="#included">Usługi</a></li>
+      <li><a href="#how-it-works">Jak to działa</a></li>
+      <li><a href="#pricing">Cennik</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+    <!-- Desktop actions -->
+    <div class="nav__actions">
+      <a href="mailto:hello@codeq.pl" class="btn btn--outline-white btn--sm">Napisz do nas</a>
+      <a href="#pricing" class="btn btn--primary btn--sm">Wybierz plan</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav__mobile" id="mobileMenu" role="dialog" aria-label="Menu nawigacji">
+  <ul>
+    <li><a href="#problem">Problem</a></li>
+    <li><a href="#included">Usługi</a></li>
+    <li><a href="#how-it-works">Jak to działa</a></li>
+    <li><a href="#pricing">Cennik</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;">
+    <a href="mailto:hello@codeq.pl" class="btn btn--outline-white btn--sm">Napisz do nas</a>
+    <a href="#pricing" class="btn btn--primary btn--sm" style="flex:1;justify-content:center;">Wybierz plan</a>
+  </div>
+</div>
+
+
+<main>
+
+<!-- ====================================================
+     1. HERO
+     ==================================================== -->
+<section class="hero" id="hero" aria-label="Nagłówek strony">
+  <div class="hero__bg" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+
+    <!-- LEFT: Content -->
+    <div class="hero__content">
+
+      <div class="hero__eyebrow">
+        <span class="badge badge--white-muted">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Abonament na utrzymanie strony
+        </span>
+      </div>
+
+      <h1 class="hero__title">
+        Twoja strona zawsze&nbsp;gotowa.<br>
+        <em>Ty skupiasz się na biznesie.</em>
+      </h1>
+
+      <!-- Platform-specific subtitle -->
+      <div data-platform="wordpress">
+        <p class="hero__subtitle">
+          Codeq Plus to abonament techniczny dla właścicieli stron WordPress.
+          Aktualizacje, monitoring, bezpieczeństwo i analityka — bez rekrutacji, bez etatu, w stałej cenie.
+        </p>
+      </div>
+      <div data-platform="woocommerce" style="display:none">
+        <p class="hero__subtitle">
+          Codeq Plus to abonament techniczny dla właścicieli sklepów WooCommerce.
+          Aktualizacje wtyczek, monitoring dostępności i miesięczne raporty UX — Twój sklep zawsze sprawny.
+        </p>
+      </div>
+      <div data-platform="shopify" style="display:none">
+        <p class="hero__subtitle">
+          Codeq Plus to abonament techniczny dla właścicieli sklepów Shopify.
+          Konfiguracja analityki, monitoring, backupy i rekomendacje UX — wszystko w jednym abonamencie.
+        </p>
+      </div>
+
+      <!-- Platform switch -->
+      <div class="platform-switch" role="group" aria-label="Wybór platformy">
+        <span class="platform-switch__lbl">Platforma</span>
+        <button class="platform-btn active" data-platform="wordpress">WordPress</button>
+        <button class="platform-btn" data-platform="woocommerce">WooCommerce</button>
+        <button class="platform-btn" data-platform="shopify">Shopify</button>
+      </div>
+
+      <!-- Billing toggle -->
+      <div class="billing-row" role="group" aria-label="Tryb rozliczania">
+        <span class="billing-lbl hero-billing-lbl active" data-billing="monthly">Miesięcznie</span>
+        <label class="toggle-switch" aria-label="Przełącz na rozliczenie roczne">
+          <input type="checkbox" id="heroBilling" />
+          <div class="toggle-track"></div>
+          <div class="toggle-thumb"></div>
+        </label>
+        <span class="billing-lbl hero-billing-lbl" data-billing="yearly">Rocznie</span>
+        <span class="billing-save-badge">Oszczędzasz 600 PLN</span>
+      </div>
+
+      <!-- Price -->
+      <div class="hero__price-row" aria-live="polite">
+        <span class="hero__price-main" id="heroPriceMain">399 PLN</span>
+        <span class="hero__price-period" id="heroPricePeriod">/mies.</span>
+        <span class="hero__price-orig" id="heroPriceOrig" aria-label="Cena bez rabatu"></span>
+      </div>
+
+      <!-- CTAs -->
+      <div class="hero__ctas">
+        <a href="#pricing" class="btn btn--white btn--lg">
+          Wybierz plan
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+        <a href="#included" class="btn btn--outline-white btn--lg">Co obejmuje plan?</a>
+      </div>
+
+      <!-- Trust signals -->
+      <div class="hero__trust">
+        <div class="hero__trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Bez długoterminowych zobowiązań
+        </div>
+        <div class="hero__trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Konfiguracja w 48h
+        </div>
+        <div class="hero__trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Dedykowany opiekun
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Visual card + VideoAsk placeholder -->
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__card">
+
+        <div class="hero__card-header">
+          <div class="hero__card-avatar">M</div>
+          <div>
+            <div class="hero__card-name">Marta — Twój opiekun Codeq Plus</div>
+            <div class="hero__card-role">Dostępna pon–pt, 9:00–18:00</div>
+          </div>
+        </div>
+
+        <!-- VideoAsk placeholder -->
+        <div class="hero__videoask" role="button" tabindex="0" aria-label="Obejrzyj wprowadzenie wideo">
+          <div class="play-btn">
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <span class="hero__videoask-lbl">Obejrzyj wprowadzenie · 2 min</span>
+        </div>
+
+        <!-- Live stats -->
+        <div class="hero__stats">
+          <div class="hero__stat green">
+            <div class="hero__stat-val">99.9%</div>
+            <div class="hero__stat-lbl">Uptime</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-val">24/7</div>
+            <div class="hero__stat-lbl">Monitoring</div>
+          </div>
+          <div class="hero__stat orange">
+            <div class="hero__stat-val">&lt;24h</div>
+            <div class="hero__stat-lbl">Czas reakcji</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     2. PROBLEM
+     ==================================================== -->
+<section class="section section--light" id="problem" aria-labelledby="problem-title">
+  <div class="container">
+
+    <div class="section-header" data-anim>
+      <span class="section-eyebrow">Dlaczego to ważne</span>
+      <h2 id="problem-title">Trzy problemy, które kosztują Cię więcej niż abonament</h2>
+      <p>Większość firm odkrywa te braki dopiero wtedy, gdy coś się posypie. Codeq Plus eliminuje ryzyko zanim stanie się kryzyse.</p>
+    </div>
+
+    <div class="problem-grid">
+
+      <div class="problem-card" data-anim data-delay="1">
+        <div class="problem-card__icon" aria-hidden="true">
+          <!-- AlertCircle icon -->
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r=".5" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>Strona przestaje działać i nikt nie reaguje</h3>
+        <p>Awaria w nocy, błąd po aktualizacji, niedziałający checkout — jeśli nie masz stałego opiekuna technicznego, problem trwa, a Ty tracisz klientów i przychód.</p>
+      </div>
+
+      <div class="problem-card" data-anim data-delay="2">
+        <div class="problem-card__icon" aria-hidden="true">
+          <!-- Shield icon -->
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="10" x2="12" y2="14"/><circle cx="12" cy="17" r=".5" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>Nieaktualne wtyczki = luki bezpieczeństwa</h3>
+        <p>Ponad 90% włamań na strony WordPress wynika z nieaktualnych wtyczek i motywów. Atakujący skanują internet automatycznie. Twoja strona nie jest wyjątkiem.</p>
+      </div>
+
+      <div class="problem-card" data-anim data-delay="3">
+        <div class="problem-card__icon" aria-hidden="true">
+          <!-- BarChart icon -->
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Brak analityki = decyzje bez danych</h3>
+        <p>Bez GA4, GTM i Microsoft Clarity nie wiesz, skąd przychodzą klienci, gdzie porzucają koszyk ani które treści konwertują. Optymalizujesz w ciemno.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     3. WHAT'S INCLUDED
+     ==================================================== -->
+<section class="section section--dark" id="included" aria-labelledby="included-title">
+  <div class="container">
+
+    <div class="section-header" data-anim>
+      <span class="section-eyebrow">Co obejmuje plan</span>
+      <h2 id="included-title">Wszystko, czego potrzebuje Twoja strona. W jednej stałej cenie.</h2>
+      <p>Nie płacisz za godziny. Nie pilnujesz terminów. Nie szukasz specjalistów. My to robimy za Ciebie.</p>
+    </div>
+
+    <div class="included__grid">
+
+      <div class="included-item" data-anim data-delay="1">
+        <div class="included-item__icon" aria-hidden="true">
+          <!-- BarChart3 -->
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+        </div>
+        <div class="included-item__body">
+          <div class="included-item__title">GTM + GA4 + Microsoft Clarity</div>
+          <div class="included-item__text">Wdrożenie i konfiguracja pełnego stosu analitycznego. Śledzenie konwersji, zachowań użytkowników i źródeł ruchu — gotowe od pierwszego miesiąca.</div>
+        </div>
+      </div>
+
+      <div class="included-item" data-anim data-delay="2">
+        <div class="included-item__icon" aria-hidden="true">
+          <!-- RefreshCw -->
+          <svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        </div>
+        <div class="included-item__body">
+          <div class="included-item__title">Miesięczne aktualizacje CMS i wtyczek</div>
+          <div class="included-item__text">Regularne aktualizacje WordPress, WooCommerce, motywu i wszystkich wtyczek — testowane na środowisku stagingowym przed wdrożeniem na produkcję.</div>
+        </div>
+      </div>
+
+      <div class="included-item" data-anim data-delay="3">
+        <div class="included-item__icon" aria-hidden="true">
+          <!-- Gauge/Speedometer -->
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="included-item__body">
+          <div class="included-item__title">Miesięczna analiza wydajności</div>
+          <div class="included-item__text">Audyt Core Web Vitals, prędkości ładowania i optymalizacji obrazków. Konkretne rekomendacje, nie tylko wyniki testów.</div>
+        </div>
+      </div>
+
+      <div class="included-item" data-anim data-delay="4">
+        <div class="included-item__icon" aria-hidden="true">
+          <!-- Archive/Backup -->
+          <svg viewBox="0 0 24 24"><polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5" rx="1"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+        </div>
+        <div class="included-item__body">
+          <div class="included-item__title">Cotygodniowe kopie zapasowe</div>
+          <div class="included-item__text">Automatyczne backupy przechowywane w bezpiecznej chmurze. W razie awarii przywracamy stronę do sprawnego stanu w ciągu godzin, nie dni.</div>
+        </div>
+      </div>
+
+      <div class="included-item" data-anim data-delay="5">
+        <div class="included-item__icon" aria-hidden="true">
+          <!-- Radio/Monitoring -->
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+        </div>
+        <div class="included-item__body">
+          <div class="included-item__title">Monitoring dostępności 24/7</div>
+          <div class="included-item__text">Automatyczne sprawdzanie dostępności strony co minutę. Alerty w czasie rzeczywistym i natychmiastowa reakcja — zanim klienci zdążą zauważyć problem.</div>
+        </div>
+      </div>
+
+      <div class="included-item" data-anim data-delay="6">
+        <div class="included-item__icon" aria-hidden="true">
+          <!-- Eye/UX -->
+          <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div class="included-item__body">
+          <div class="included-item__title">Miesięczne analizy UX</div>
+          <div class="included-item__text">Na podstawie danych z Clarity i GA4 przygotowujemy miesięczne spostrzeżenia o zachowaniu użytkowników — heatmapy, nagrania sesji i rekomendacje zmian.</div>
+        </div>
+      </div>
+
+      <div class="included-item included-item--accent" data-anim data-delay="7">
+        <div class="included-item__icon" aria-hidden="true">
+          <!-- Tag/Discount -->
+          <svg viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.5" fill="rgba(255,255,255,0.8)" stroke="none"/></svg>
+        </div>
+        <div class="included-item__body">
+          <div class="included-item__title">15% rabatu na godziny specjalistyczne</div>
+          <div class="included-item__text">Potrzebujesz nowej funkcji, redesignu lub wsparcia SEO? Jako klient Codeq Plus korzystasz z 15% rabatu na wszystkie dodatkowe prace — od pierwszego zlecenia. Rabat działa natychmiast po aktywacji abonamentu.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     4. WHO IS IT FOR
+     ==================================================== -->
+<section class="section section--alt" id="for-whom" aria-labelledby="for-whom-title">
+  <div class="container">
+
+    <div class="section-header" data-anim>
+      <span class="section-eyebrow">Dla kogo</span>
+      <h2 id="for-whom-title">Codeq Plus to nie dla każdego. I o to chodzi.</h2>
+      <p>Zaprojektowaliśmy ten plan dla konkretnych firm — nie dla wszystkich. Sprawdź, czy pasujesz.</p>
+    </div>
+
+    <div class="for-whom__grid">
+
+      <div class="for-whom-card" data-anim data-delay="1">
+        <div class="for-whom-card__num">01</div>
+        <h3>Masz już stronę i chcesz, żeby działała bez przestojów</h3>
+        <p>Nie budujesz od zera. Masz działający serwis i chcesz mieć pewność, że jest bezpieczny, aktualny i szybki — bez angażowania własnych zasobów w technikalia.</p>
+      </div>
+
+      <div class="for-whom-card" data-anim data-delay="2">
+        <div class="for-whom-card__num">02</div>
+        <h3>Zależy Ci na niezawodności, nie na ciągłym rozwoju</h3>
+        <p>Nie szukasz agencji, która będzie tworzyć nowe kampanie i przebudowywać stronę co kwartał. Chcesz, żeby to, co masz, działało sprawnie, bezpiecznie i przewidywalnie.</p>
+      </div>
+
+      <div class="for-whom-card" data-anim data-delay="3">
+        <div class="for-whom-card__num">03</div>
+        <h3>Nie masz webmastera ani wewnętrznego działu IT</h3>
+        <p>Aktualizacje, backupy i monitoring to rzeczy, które ktoś powinien robić — ale nikt w Twoim zespole tego nie robi, bo wszyscy mają ważniejsze zadania. My przejmujemy tę odpowiedzialność.</p>
+      </div>
+
+    </div>
+
+    <!-- Codeq Care transition banner -->
+    <div class="care-banner" data-anim>
+      <div class="care-banner__content">
+        <div class="care-banner__eyebrow">Potrzebujesz więcej?</div>
+        <h3>Codeq Care — pełny zewnętrzny dział e-commerce</h3>
+        <p>Jeśli szukasz stałego wsparcia strategicznego, UX, kampanii i rozwoju — Codeq Care to dedykowany zespół specjalistów działający jak Twój własny dział e-commerce, bez rekrutacji i etatów.</p>
+      </div>
+      <div style="flex-shrink:0;">
+        <a href="https://gp-lgtm.github.io/Solutions-Codeq/" target="_blank" rel="noopener" class="btn btn--white btn--lg">
+          Poznaj Codeq Care
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     5. HOW IT WORKS
+     ==================================================== -->
+<section class="section section--light" id="how-it-works" aria-labelledby="how-title">
+  <div class="container">
+
+    <div class="section-header" data-anim>
+      <span class="section-eyebrow">Jak to działa</span>
+      <h2 id="how-title">Trzy kroki do strony, o którą nie musisz się martwić</h2>
+      <p>Cały proces trwa mniej niż 48 godzin. Po onboardingu działamy w tle, a Ty dostajesz miesięczne raporty.</p>
+    </div>
+
+    <div class="how-timeline">
+
+      <div class="how-step" data-anim data-delay="1">
+        <div class="how-step__icon" aria-hidden="true">
+          <!-- CreditCard / Subscribe -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <div class="how-step__lbl">Krok 1</div>
+        <h3>Subskrybujesz plan</h3>
+        <p>Wybierasz platformę, rozliczenie i klikasz "Wybierz plan". W ciągu 24h kontaktujemy się z Tobą, żeby zebrać dostępy i uruchomić onboarding.</p>
+      </div>
+
+      <div class="how-step" data-anim data-delay="2">
+        <div class="how-step__icon" aria-hidden="true">
+          <!-- Settings / Configure -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <div class="how-step__lbl">Krok 2</div>
+        <h3>My konfigurujemy i monitorujemy</h3>
+        <p>Wdrażamy analitykę, konfigurujemy monitoring i backupy, a następnie działamy w tle — aktualizujemy, sprawdzamy i reagujemy na alerty.</p>
+      </div>
+
+      <div class="how-step" data-anim data-delay="3">
+        <div class="how-step__icon" aria-hidden="true">
+          <!-- FileText / Reports -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <div class="how-step__lbl">Krok 3</div>
+        <h3>Dostajesz raporty i rekomendacje</h3>
+        <p>Co miesiąc wysyłamy Ci czytelny raport: status aktualizacji, wyniki monitoringu, wydajność strony i spostrzeżenia UX — z konkretnymi wskazówkami co poprawić.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     6. PRICING
+     ==================================================== -->
+<section class="section section--darker" id="pricing" aria-labelledby="pricing-title">
+  <div class="container">
+
+    <div class="section-header" data-anim>
+      <span class="section-eyebrow">Cennik</span>
+      <h2 id="pricing-title">Jeden plan. Trzy platformy. Żadnych niespodzianek.</h2>
+      <p>Prosta, przejrzysta cena bez ukrytych opłat. Wybierz rozliczenie miesięczne lub roczne z oszczędnością 600 PLN.</p>
+    </div>
+
+    <div class="pricing__controls" data-anim>
+
+      <!-- Platform tabs -->
+      <div class="pricing-tabs" role="tablist" aria-label="Wybierz platformę">
+        <button class="pricing-tab active" data-platform="wordpress" role="tab" aria-selected="true">WordPress</button>
+        <button class="pricing-tab" data-platform="woocommerce" role="tab" aria-selected="false">WooCommerce</button>
+        <button class="pricing-tab" data-platform="shopify" role="tab" aria-selected="false">Shopify</button>
+      </div>
+
+      <!-- Billing toggle -->
+      <div class="pricing-billing" role="group" aria-label="Tryb rozliczania">
+        <span class="billing-lbl pricing-billing-lbl active" data-billing="monthly">Miesięcznie</span>
+        <label class="toggle-switch" aria-label="Przełącz na rozliczenie roczne">
+          <input type="checkbox" id="pricingBilling" />
+          <div class="toggle-track"></div>
+          <div class="toggle-thumb"></div>
+        </label>
+        <span class="billing-lbl pricing-billing-lbl" data-billing="yearly">Rocznie</span>
+        <span class="billing-save-badge">–600 PLN/rok</span>
+      </div>
+
+    </div>
+
+    <div class="pricing__grid">
+
+      <!-- WordPress card -->
+      <div class="pricing-card" data-anim data-delay="1">
+        <div class="pricing-card__platform">
+          <div class="pricing-card__platform-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+              <text x="12" y="17" text-anchor="middle" font-size="12" font-weight="800" fill="rgba(255,255,255,0.9)" font-family="Inter,sans-serif">W</text>
+            </svg>
+          </div>
+          <span class="pricing-card__platform-name">WordPress</span>
+        </div>
+        <div class="pricing-card__name">Codeq Plus</div>
+        <div class="pricing-card__desc">Pełna opieka techniczna nad stroną WordPress. Aktualizacje, monitoring, backupy i analityka.</div>
+        <div class="pricing-card__price-area">
+          <span class="pricing-card__price" data-price>399 PLN</span>
+          <span class="pricing-card__period">/mies.</span>
+          <span class="pricing-card__orig" data-price-orig style="display:none">Zamiast 399 PLN/mies.</span>
+        </div>
+        <ul class="pricing-card__features" aria-label="Co zawiera plan">
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            GTM + GA4 + Microsoft Clarity
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Miesięczne aktualizacje WordPress i wtyczek
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Miesięczna analiza wydajności
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Cotygodniowe kopie zapasowe
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Monitoring dostępności 24/7
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Miesięczne analizy UX i raport
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            15% rabatu na godziny specjalistyczne
+          </li>
+        </ul>
+        <a href="mailto:hello@codeq.pl?subject=Codeq Plus WordPress" class="btn btn--primary" style="width:100%;justify-content:center;">
+          Zacznij teraz
+        </a>
+        <p class="pricing-card__info">Onboarding w 48h · Dedykowany opiekun · Rezygnacja w każdej chwili</p>
+      </div>
+
+      <!-- WooCommerce card (featured) -->
+      <div class="pricing-card pricing-card--featured" data-anim data-delay="2">
+        <div class="pricing-card__top-badge">Najpopularniejszy</div>
+        <div class="pricing-card__platform">
+          <div class="pricing-card__platform-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="3" width="20" height="18" rx="3" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+              <path d="M2 9h20" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+              <circle cx="8" cy="15" r="1.5" fill="rgba(255,255,255,0.8)"/>
+              <circle cx="14" cy="15" r="1.5" fill="rgba(255,255,255,0.8)"/>
+            </svg>
+          </div>
+          <span class="pricing-card__platform-name">WooCommerce</span>
+        </div>
+        <div class="pricing-card__name">Codeq Plus</div>
+        <div class="pricing-card__desc">Pełna opieka nad sklepem WooCommerce. Monitoring checkout, wydajność i bezpieczeństwo transakcji.</div>
+        <div class="pricing-card__price-area">
+          <span class="pricing-card__price" data-price>399 PLN</span>
+          <span class="pricing-card__period">/mies.</span>
+          <span class="pricing-card__orig" data-price-orig style="display:none">Zamiast 399 PLN/mies.</span>
+        </div>
+        <ul class="pricing-card__features" aria-label="Co zawiera plan">
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            GTM + GA4 + Microsoft Clarity + śledzenie e-commerce
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Miesięczne aktualizacje WooCommerce i wtyczek
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Monitoring wydajności i checkoutu
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Cotygodniowe kopie zapasowe sklepu i bazy
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Monitoring dostępności 24/7
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Miesięczne analizy UX i raport konwersji
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            15% rabatu na godziny specjalistyczne
+          </li>
+        </ul>
+        <a href="mailto:hello@codeq.pl?subject=Codeq Plus WooCommerce" class="btn btn--primary" style="width:100%;justify-content:center;">
+          Zacznij teraz
+        </a>
+        <p class="pricing-card__info">Onboarding w 48h · Dedykowany opiekun · Rezygnacja w każdej chwili</p>
+      </div>
+
+      <!-- Shopify card -->
+      <div class="pricing-card" data-anim data-delay="3">
+        <div class="pricing-card__platform">
+          <div class="pricing-card__platform-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linejoin="round"/>
+              <line x1="3" y1="6" x2="21" y2="6" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+              <path d="M16 10a4 4 0 0 1-8 0" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="pricing-card__platform-name">Shopify</span>
+        </div>
+        <div class="pricing-card__name">Codeq Plus</div>
+        <div class="pricing-card__desc">Pełna opieka nad sklepem Shopify. Analityka, monitoring, optymalizacja i miesięczne raporty UX.</div>
+        <div class="pricing-card__price-area">
+          <span class="pricing-card__price" data-price>399 PLN</span>
+          <span class="pricing-card__period">/mies.</span>
+          <span class="pricing-card__orig" data-price-orig style="display:none">Zamiast 399 PLN/mies.</span>
+        </div>
+        <ul class="pricing-card__features" aria-label="Co zawiera plan">
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            GTM + GA4 + Microsoft Clarity dla Shopify
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Miesięczny przegląd aplikacji i integracji
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Miesięczna analiza wydajności sklepu
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Cotygodniowe kopie zapasowe motywu i danych
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Monitoring dostępności 24/7
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Miesięczne analizy UX i raport konwersji
+          </li>
+          <li class="pricing-card__feat">
+            <span class="feat-check" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            15% rabatu na godziny specjalistyczne
+          </li>
+        </ul>
+        <a href="mailto:hello@codeq.pl?subject=Codeq Plus Shopify" class="btn btn--primary" style="width:100%;justify-content:center;">
+          Zacznij teraz
+        </a>
+        <p class="pricing-card__info">Onboarding w 48h · Dedykowany opiekun · Rezygnacja w każdej chwili</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     7. SOCIAL PROOF
+     ==================================================== -->
+<section class="section section--light" id="social-proof" aria-labelledby="social-title">
+  <div class="container">
+
+    <div class="section-header" data-anim>
+      <span class="section-eyebrow">Opinie klientów</span>
+      <h2 id="social-title">Firmy, które przestały martwić się o stronę</h2>
+      <p>Zaufali nam właściciele sklepów i serwisów z całej Polski. Oto co mówią po kilku miesiącach współpracy.</p>
+    </div>
+
+    <div class="testimonials">
+
+      <div class="testimonial-card" data-anim data-delay="1">
+        <div class="testimonial-card__stars" aria-label="Ocena 5/5">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <p class="testimonial-card__quote">
+          „Od kiedy korzystamy z Codeq Plus, nie musimy martwić się o stronę. Wszystko działa, co miesiąc dostajemy raport i możemy skupić się na sprzedaży. Cena jest uczciwa za spokój głowy."
+        </p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" aria-hidden="true">AK</div>
+          <div>
+            <div class="testimonial-card__name">Anna Kowalczyk</div>
+            <div class="testimonial-card__company">Dyrektor marketingu, RetailModa Sp. z o.o.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-anim data-delay="2">
+        <div class="testimonial-card__stars" aria-label="Ocena 5/5">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <p class="testimonial-card__quote">
+          „Wcześniej sami próbowaliśmy pilnować aktualizacji. Raz coś się posypało i straciliśmy sklep na 6 godzin. Teraz mamy to z głowy — Codeq reaguje zanim my w ogóle zdążymy zauważyć problem."
+        </p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" aria-hidden="true">PM</div>
+          <div>
+            <div class="testimonial-card__name">Piotr Malinowski</div>
+            <div class="testimonial-card__company">Właściciel, ModaOnline.pl</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card" data-anim data-delay="3">
+        <div class="testimonial-card__stars" aria-label="Ocena 5/5">
+          <span aria-hidden="true">★★★★★</span>
+        </div>
+        <p class="testimonial-card__quote">
+          „Najbardziej zaskoczyła mnie analityka — dopiero po jej wdrożeniu zobaczyliśmy, że 40% użytkowników mobilnych porzucało koszyk na etapie dostawy. Naprawiliśmy to w tydzień."
+        </p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" aria-hidden="true">MW</div>
+          <div>
+            <div class="testimonial-card__name">Marta Wiśniewska</div>
+            <div class="testimonial-card__company">CEO, TechServices.pl</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Logo wall -->
+    <div class="logo-wall" data-anim>
+      <p class="logo-wall__lbl">Zaufali nam</p>
+      <div class="logo-wall__logos" aria-label="Wybrani klienci Codeq Plus">
+        <span class="logo-placeholder" aria-label="RetailModa">RetailModa</span>
+        <span class="logo-placeholder" aria-label="ModaOnline">ModaOnline</span>
+        <span class="logo-placeholder" aria-label="TechServices">TechServices</span>
+        <span class="logo-placeholder" aria-label="GreenStore">GreenStore</span>
+        <span class="logo-placeholder" aria-label="ProBuild">ProBuild</span>
+        <span class="logo-placeholder" aria-label="Arteza">Arteza</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     8. FAQ
+     ==================================================== -->
+<section class="section section--alt" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+
+    <div class="section-header" data-anim>
+      <span class="section-eyebrow">FAQ</span>
+      <h2 id="faq-title">Najczęstsze pytania</h2>
+      <p>Nie znalazłeś odpowiedzi? Napisz do nas na <a href="mailto:hello@codeq.pl" style="color:var(--codeq-blue);text-decoration:underline;">hello@codeq.pl</a></p>
+    </div>
+
+    <div class="faq__list" role="list">
+
+      <div class="faq-item" role="listitem" data-anim data-delay="1">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-body-1">
+          Czy muszę mieć sklep internetowy, żeby skorzystać z Codeq Plus?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-body" id="faq-body-1" role="region" aria-hidden="true">
+          <div class="faq-body__inner">
+            <p>Nie. Codeq Plus działa zarówno dla stron wizytówkowych, blogów i portali, jak i dla sklepów internetowych na WordPress/WooCommerce lub Shopify. Jedynym warunkiem jest posiadanie już działającej strony na jednej z obsługiwanych platform. Jeśli masz inną platformę, skontaktuj się z nami — w wielu przypadkach jesteśmy w stanie znaleźć rozwiązanie.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem" data-anim data-delay="2">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-body-2">
+          Czy mogę zrezygnować w dowolnym momencie?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-body" id="faq-body-2" role="region" aria-hidden="true">
+          <div class="faq-body__inner">
+            <p>Tak. Codeq Plus działa w modelu bez długoterminowych zobowiązań. Możesz zrezygnować z jednomiesięcznym wypowiedzeniem — wystarczy powiadomić nas mailowo. Przy rozliczeniu rocznym zwracamy proporcjonalną część opłaty za niewykorzystane miesiące.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem" data-anim data-delay="3">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-body-3">
+          Czy 15% rabatu na godziny specjalistyczne działa od razu?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-body" id="faq-body-3" role="region" aria-hidden="true">
+          <div class="faq-body__inner">
+            <p>Tak. Od momentu aktywacji abonamentu Codeq Plus, każde zlecenie dodatkowej pracy specjalistycznej (development, design, SEO, kampanie) jest objęte 15% rabatem od naszego standardowego cennika. Rabat jest naliczany automatycznie — nie musisz o nim przypominać.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem" data-anim data-delay="4">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-body-4">
+          Czym Codeq Plus różni się od Codeq Care?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-body" id="faq-body-4" role="region" aria-hidden="true">
+          <div class="faq-body__inner">
+            <p>Codeq Plus to abonament utrzymaniowy — dbamy o techniczną sprawność Twojej strony: aktualizacje, monitoring, bezpieczeństwo i analityka. To plan dla firm, które mają działającą stronę i chcą ją utrzymać w dobrej kondycji bez własnego IT.</p>
+            <p style="margin-top:12px;">Codeq Care to pełny zewnętrzny dział e-commerce. Odpowiada za strategię, wzrost, UX, kampanie marketingowe i ciągły rozwój — jak dedykowany zespół wewnętrzny, ale bez rekrutacji i etatów. To rozwiązanie dla firm, które chcą aktywnie skalować swój biznes online.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem" data-anim data-delay="5">
+        <button class="faq-trigger" aria-expanded="false" aria-controls="faq-body-5">
+          Co jeśli moja strona nie jest na WordPress, WooCommerce ani Shopify?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-body" id="faq-body-5" role="region" aria-hidden="true">
+          <div class="faq-body__inner">
+            <p>Aktualnie w standardowym abonamencie obsługujemy WordPress, WooCommerce i Shopify. Jeśli korzystasz z innej platformy (np. PrestaShop, Webflow, własny system), napisz do nas na <a href="mailto:hello@codeq.pl" style="color:var(--codeq-blue);">hello@codeq.pl</a> — ocenimy możliwości i przygotujemy indywidualną wycenę.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     9. FINAL CTA
+     ==================================================== -->
+<section class="section final-cta" id="contact" aria-labelledby="cta-title">
+  <div class="container final-cta__inner">
+
+    <div data-anim>
+      <span class="badge badge--white-muted" style="margin-bottom:var(--space-5);display:inline-flex;">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Dołącz do Codeq Plus
+      </span>
+      <h2 id="cta-title">Twoja strona zasługuje<br>na stałą opiekę.</h2>
+      <p>Przestań liczyć na szczęście. Zacznij mieć pewność, że Twoja strona działa, jest bezpieczna i rośnie razem z Twoim biznesem — bez angażowania własnych zasobów.</p>
+
+      <div class="final-cta__actions">
+        <a href="#pricing" class="btn btn--white btn--lg">
+          Wybierz plan od 399 PLN/mies.
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+        <a href="mailto:hello@codeq.pl" class="btn btn--outline-white btn--lg">Porozmawiaj z nami</a>
+      </div>
+
+      <p class="final-cta__alt">
+        Masz pytania? Napisz na <a href="mailto:hello@codeq.pl">hello@codeq.pl</a> — odpiszemy w ciągu jednego dnia roboczego.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+
+<!-- ====================================================
+     FOOTER
+     ==================================================== -->
+<footer class="footer" aria-label="Stopka">
+  <div class="container">
+    <div class="footer__inner">
+
+      <div>
+        <div class="footer__logo" aria-label="Codeq Plus">
+          <div class="footer__logo-mark" aria-hidden="true"></div>
+          <span class="footer__logo-text">Codeq <em>Plus</em></span>
+        </div>
+        <p class="footer__tagline">Abonament na techniczną opiekę nad stroną WordPress, WooCommerce i Shopify. Bez zobowiązań, z dedykowanym opiekunem.</p>
+        <a href="mailto:hello@codeq.pl" style="font-size:14px;color:rgba(255,255,255,.55);transition:color .2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.55)'">hello@codeq.pl</a>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Nawigacja</p>
+        <ul class="footer__links">
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#included">Co obejmuje plan</a></li>
+          <li><a href="#for-whom">Dla kogo</a></li>
+          <li><a href="#how-it-works">Jak to działa</a></li>
+          <li><a href="#pricing">Cennik</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Platforma</p>
+        <ul class="footer__links">
+          <li><a href="#pricing">WordPress</a></li>
+          <li><a href="#pricing">WooCommerce</a></li>
+          <li><a href="#pricing">Shopify</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__col-title">Codeq</p>
+        <ul class="footer__links">
+          <li><a href="https://gp-lgtm.github.io/Solutions-Codeq/" target="_blank" rel="noopener">Codeq Care</a></li>
+          <li><a href="mailto:hello@codeq.pl">Kontakt</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 Codeq. Wszelkie prawa zastrzeżone.</p>
+      <nav class="footer__legal" aria-label="Linki prawne">
+        <a href="#">Polityka prywatności</a>
+        <a href="#">Regulamin</a>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
